@@ -43,6 +43,8 @@ func ConnectToDb() {
 		&model.Inventory{},
 		&model.Expense{},
 		&model.PriceList{},
+		&model.TempBilling{},
+		&model.TempPurchases{},
 	)
 	if err != nil {
     	log.Fatal("Failed to migrate database: ", err)
